@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 5px;
+  font-family: sans-serif;
+}
+
+header, main, section, footer {
+  margin-bottom: 25px;
+}
+
+h1, h2, h3 {
+  font-family: serif;
+}
+
+img {
+  width: 250px;
+}
+
+p {
+  font-size: 1.05em;
+  text-indent: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+  background-color: aqua;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0 15px;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: line-through;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: tomato;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* HLAVNÁ ČASŤ */
+main, section {
+  background-color: wheat;
+  padding: 10px;
+}
+
+figure {
+  display: flex;
+  flex-flow: column;
+  width: 250px;
+  padding: 5px;
+}
+
+figcaption {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: aqua;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10em;
+}
+
+@media (min-width: 751px) and (max-width: 1150px) {
+  nav {
+    text-align: center;
+  }
+  
+  footer {
+    margin: 0px;
+    column-gap: 0;
+    justify-content: center;
+  }
+
+  footer div {
+    text-align: center;
+  }
+
+  footer ul {
+    padding-top: 15px;
+    list-style-type: none;
+  }
+}
+
+@media (max-width: 750px) {
+  * {
+    margin: 0;
+  }
+
+  header, main, footer {
+    padding: 10px 20px;
+  }
+  
+  header {
+    flex-flow: column;
+    align-items: initial;
+  }
+  
+  header p {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    margin-top: 15px;
+    padding: 15px;
+  }
+
+  li {
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+    column-gap: 0;
+  }
+
+  footer div {
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  #abstrakt p {
+    margin-bottom: 5px;
+    font-size: 1.05em;
+    text-indent: 0;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #tabulka {
+    overflow-x: scroll;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  header, main, footer {
+    margin-bottom: 5px;
+    padding: 25px 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer div {
+    text-align: center;
+  }
+
+  footer h3 {
+    margin-bottom: 1.5em;
+  }
+}
