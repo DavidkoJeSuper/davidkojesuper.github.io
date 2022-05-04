@@ -41,7 +41,8 @@ header {
 }
 
 .menu a {
-  color: teal;
+  color: magenta;
+  font-weight: bold;
   text-decoration: none;
 }
 
